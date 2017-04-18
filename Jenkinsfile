@@ -10,6 +10,7 @@ pipeline {
                 '''
                 timeout(time: 1, unit: 'SECONDS') {
                     sh './runForJenkins'
+                }
             }
         }
     }
