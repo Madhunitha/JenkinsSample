@@ -8,6 +8,8 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
+                timeout(time: 1, unit: 'SECONDS') {
+                    sh './runForJenkins'
             }
         }
     }
